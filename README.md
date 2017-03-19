@@ -57,11 +57,13 @@ Gently lower each coathanger and plant and guide them to one side. It helps to n
 The substrate comes with about eight cups of water with the 20-lb bag. I'm using the [CaribSea Eco-Complete Planted Aquarium Substrate](https://www.caribsea.com/caribsea_ecoplanted.html).
 
 ### Add the Substrate Slowly
-Add 
+Add about eight cups of substrate slowly using a spoon. It helps to tilt the carboy so that the substrate falls to one side. Add a little, adjust the location of the plants, tilt the carboy differently and add more substrate until you've covered the bottom.
 
 ![substrate-step8](https://cloud.githubusercontent.com/assets/15971213/24085790/74f58f9c-0cbf-11e7-9208-304eefcdf278.png)
 
 ### Add Water
+Move the carboy to its final location near sunlight but not in direct sunlight. It's important to get some sun but not too much. The intent is to later programmatically add just enough extra artificial light to keep everything in balance. So begin by finding a spot that can support a heavy carboy plus lots of water. It will be heavy after filling, about 35 pounds.
+
 Add about three gallons of distilled water to bring the water level to the 5 gallon/15 liter mark on the graduated side of the carboy, noting that it has a 19-liter capacity in my case.
 
 ![distilledwater-step9](https://cloud.githubusercontent.com/assets/15971213/24085845/73f4a460-0cc0-11e7-8204-00de90320ca7.png)
@@ -76,3 +78,5 @@ Next, I prepared a square of clingwrap and just before covering everything I ble
 
 ![anchoringplants-step10](https://cloud.githubusercontent.com/assets/15971213/24085867/cb34a3ec-0cc0-11e7-8c23-b95c2c29a871.png)
 
+## Let Everything Sit For a Week
+Give the plants a chance to root into the RhyzoMat so leave it in-place near a window that doesn't get too much direct sunlight.
