@@ -23,6 +23,21 @@ The next step then would be to use the Raspberry Pi 3 to monitor the changes in 
 
 ![raspberry-pi-3](https://cloud.githubusercontent.com/assets/15971213/24085956/26739ce8-0cc3-11e7-8adb-4602a9a873a9.jpg)
 
+## Parts List
+Here's the quick-and-dirty parts list so far. I'll add prices when things get a little further on.
+
+1. Raspberry Pi 3 with 16GB micro-SD card and Raspian operating system and power adapter
+2. One 19-liter Corning Pyrex carboy
+3. One glass stopper which fits it
+4. One RhyzoMat subsurface root mat
+5. One 20# bag of CaribSea Eco-Complete Planted Aquarium substrate
+6. Optionally, one container of Seachem Flourish Excel
+7. Two coathangers
+8. A quart-sized measuring cup, a large spoon and a funnel plus some clingwrap and a sturdy pair of scissors
+9. Three gallons of distilled water
+10. A roll of paper towels to cleanup
+11. Two tall, freshwater plants
+
 ### RhyzoMat
 You'll need to buy a square of RhyzoMat for the base. the plants will send their roots down and anchor into it.
 
