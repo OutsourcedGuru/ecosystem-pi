@@ -36,7 +36,10 @@ Here's the quick-and-dirty parts list so far. I'll add prices when things get a 
 8. A quart-sized measuring cup, a large spoon and a funnel plus some clingwrap and a sturdy pair of scissors
 9. Three gallons of distilled water
 10. A roll of paper towels to cleanup
-11. Two tall, freshwater plants
+11. Two tall, freshwater plants (I chose *Aponogeton ulvaceous* as seen in later photographs)
+12. Two tiny female shrimp
+13. A 10g packet of shrimp food
+14. Optionally, one container of Ecological Laboratories Nite-Out II nitrifying bacteria
 
 ### RhyzoMat
 You'll need to buy a square of RhyzoMat for the base. the plants will send their roots down and anchor into it.
@@ -89,9 +92,37 @@ I added a half-capful of [Seachem Flourish Excel](http://www.seachem.com/flouris
 ### Anchor Each Plant For a Week
 Smooth out the substrate. You'll want to guide the plants back toward a spot somewhere in the middle of the RhyzoMat and then bend the coathangers so that they hold the plants at the surface level. We're hoping that the roots will grow down and latch into the RhyzoMat over the period of a few days.
 
+![aponogeton_ulvaceus](https://cloud.githubusercontent.com/assets/15971213/24334869/93e79658-1227-11e7-9a03-5a91a4bcbb3a.png)
+
 Next, I prepared a square of clingwrap and just before covering everything I blew into the top of the carboy to add some carbon dioxide.
 
 ![anchoringplants-step10](https://cloud.githubusercontent.com/assets/15971213/24085867/cb34a3ec-0cc0-11e7-8c23-b95c2c29a871.png)
 
 ## Let Everything Sit For a Week
 Give the plants a chance to root into the RhyzoMat so leave it in-place near a window that doesn't get too much direct sunlight.
+
+### Rock Polishing Side-Project
+Since it takes several days to polish gemstones in a rock tumbler, I'm doing this during the first week of settling for the ecosystem. Once polished, these will be added to the bottom of the carboy on top of the substrate.
+
+## Review Things a Week Later
+The water cleared up within 24 hours, as expected. I have re-arranged the coathangers so that instead of surrounding the top of the plant bulb in each case, it's now just weighing them down. There isn't a substantial amount of rooting going on yet so I'll need to let the coathangers remain until that happens.
+
+### Algae Growth
+After a week, it looks like a healthy amount of algae has now peppered the sides of the *Aponogeton ulvaceous* but I anticipate that the shrimp will feed off this as a food source.
+
+![algae](https://cloud.githubusercontent.com/assets/15971213/24334849/315ea0b2-1227-11e7-8480-183723d4685d.png)
+
+### Adding Two Female Shrimp
+A trip to the local [D&K aquirium supply store](https://www.facebook.com/DK-Aquarium-n-Pet-446298812057525/) netted me two shrimp for the habitat.
+
+As expected, the shrimp immediately began eating the algae on the plant leaves so this is a good sign.
+
+![thumb_img_1410_1024](https://cloud.githubusercontent.com/assets/15971213/24334884/dd28d7d2-1227-11e7-8091-b387b242bdd3.jpg)
+
+Interestingly-enough, I've discovered a tiny snail that appears to have come from either the plants themselves or perhaps managed to arrive with the shrimp this morning.
+
+### Initial Feeding
+I added about ten tiny pellets of [Hikari Tropical Shrimp Cuisine](http://www.hikari.info/tropical/t_29.html) shrimp feed.
+
+### Optional Step
+I added a half-capful of [Ecological Laboratories Nite-Out II](https://www.microbelift.com/products/home-aquarium/bacterial-products/nite-out-ii/) which reduces nitrates and ammonia. This is probaly unnecessary, to be honest.
