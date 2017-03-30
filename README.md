@@ -142,4 +142,4 @@ I've been working on the website interface. At the moment, everything is mocked 
 ![ecosystem-pi](https://cloud.githubusercontent.com/assets/15971213/24483385/a40e702e-14ac-11e7-8b44-012858172cf0.png)
 
 ## Raspberry Pi Zero W
-The new Raspberry Pi Zero W weighs in at less than a third of the price of the original Raspberry Pi 3 originally planned for this project. I'll see if I can't get this smaller platform to do the same work as before.
+The new Raspberry Pi Zero W weighs in at less than a third of the price of the Raspberry Pi 3 originally planned for this project. I'll see if I can't get this smaller platform to do the same work as before.
