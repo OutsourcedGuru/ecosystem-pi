@@ -1,0 +1,383 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script src="/javascripts/jquery_1-9-0.js"></script>
+		<script src="/javascripts/raphael.js"></script>
+		<script src="/javascripts/jquery.sonic-gauge.js"></script>
+		<link href='//fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+		<script>
+		$(function(){
+			//---------------------------------------------------
+			// Create clock
+			//---------------------------------------------------
+			var Clock = $('#clock').SonicGauge({
+				label		: "Clock",
+				start		: {angle: -90, num: 0},
+				end		: {angle: 270, num: 60},
+				animation_speed : 1000,
+				default_num	: getTimestamp(),
+				digital		: false,
+				markers		: [
+					{
+						gap	: 5,
+						value	: {divide: 5},
+						line	: {"width": 14, "height": 5, "stroke": "none", "fill": "#cff0ab"},
+						text	: {"space": -30, "text-anchor": "middle", "fill": "#cff0ab", "font-size": 22}
+					},{
+						gap	: 1,
+						line	: {"width": 10, "stroke": "none", "fill": "#fff"},
+					}
+				],
+				style		: {
+					"outline"	: {"fill": "#333", "stroke": "#ccc", "stroke-width": 4},
+					"center"	: {"fill": "#cff0ab", "diameter": 10}
+				},
+				needles		: [
+					{
+						// Second hand
+						style	: {"fill": "#cff0ab", "width": 140, "height": 1}
+					},{
+						// Minute hand
+						value	: {divide: 60}, // 1 rotation per minute
+						style	: {"fill": "#0054ff", "width": 128, "height": 3}
+					},{
+						// Hour hand
+						value	: {divide: 720}, // 1 rotation every 12 hours
+						style	: {"fill": "#cc0000", "width": 90, "height": 4}
+					}
+				]
+			});
+			
+			//---------------------------------------------------
+			// Create thermometer gauge
+			//---------------------------------------------------
+			var Thermometer = $('#thermometer').SonicGauge({
+				label	: 'Temp (\u00B0F)\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008',
+				start	: {angle: -225, num: 45},
+				end	: {angle: 45, num: 90},
+				digital	: {
+					"width"			: "16%",
+					"font-size"		: 19,
+					"color"			: '#333',
+					"text-align"		: "center",
+					"border-radius"		: 25,
+					"padding"		: 5,
+					"background-color"	: "#e6f0f8",
+					"margin-top"		: 80
+				},
+				digital_toFixed	: 1,
+				animation_speed	: 0,
+				markers	: [
+					{
+						gap: 10,
+						line: {"width": 20, "stroke": "none", "fill": "#eeeeee"},
+						text: {"space": 22, "text-anchor": "middle", "fill": "#333333", "font-size": 18}
+					},{
+						gap: 5, 
+						line: {"width": 12, "stroke": "none", "fill": "#aaaaaa"},
+						text: {"space": 18, "text-anchor": "middle", "fill": "#333333", "font-size": 14}
+					},{
+						gap: 1, 
+						line: {"width": 8, "stroke": "none", "fill": "#999999"}
+					}
+				],
+				needles : [{ style: { height: 2} } ],
+				sectors : [
+					{
+						start: 45,
+						end: 50,
+						style: {fill: "rgba(255,0,0,.5)", stroke: "red", "stroke-width": 0}
+					},{
+						start: 50,
+						end: 86,
+						style: {fill: "rgba(0,255,0,.5)", stroke: "green", "stroke-width": 0}
+					},{
+						start: 86,
+						end: 90,
+						style: {fill: "rgba(255,0,0,.5)", stroke: "red", "stroke-width": 0}
+					}
+				],
+				style	: {
+					"outline"	: {"fill": "#dedede", "stroke": "#333", "stroke-width": 2},
+					"center"	: {"fill": "#ae1e1e", "diameter": 8, "stroke": "#590303", "stroke-width": 1},
+					"needle"	: {"fill": "#000"},
+					"label"		: {"fill": "#000", "font-size": 14}
+				}
+			});
+			//---------------------------------------------------
+			// Create pH meter gauge
+			//---------------------------------------------------
+			var pH = $('#pH').SonicGauge({
+				label	: 'pH\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008',
+				start	: {angle: -225, num: 0},
+				end	: {angle: 45, num: 14},
+				digital	: {
+					"width"			: "16%",
+					"font-size"		: 19,
+					"color"			: '#333',
+					"text-align"		: "center",
+					"border-radius"		: 25,
+					"padding"		: 5,
+					"background-color"	: "#e6f0f8",
+					"margin-top"		: 80
+				},
+				digital_toFixed	: 1,
+				animation_speed	: 0,
+				markers	: [
+					{
+						gap: 1, 
+						line: {"width": 12, "stroke": "none", "fill": "#aaaaaa"},
+						text: {"space": 18, "text-anchor": "middle", "fill": "#333333", "font-size": 14}
+					}
+				],
+				needles : [{ style: { height: 2} } ],
+				sectors : [
+					{
+						start: 0,
+						end: 5.0,
+						style: {fill: "rgba(255,0,0,1.0)", stroke: "red", "stroke-width": 0}
+					},{
+						start: 5,
+						end: 6.5,
+						style: {fill: "rgba(255,0,0,.5)", stroke: "red", "stroke-width": 0}
+					},{
+						start: 6.5,
+						end: 8,
+						style: {fill: "rgba(0,255,0,.5)", stroke: "green", "stroke-width": 0}
+					},{
+						start: 8,
+						end: 9,
+						style: {fill: "rgba(255,0,0,.5)", stroke: "red", "stroke-width": 0}
+					},{
+						start: 9,
+						end: 14,
+						style: {fill: "rgba(255,0,0,1.0)", stroke: "red", "stroke-width": 0}
+					}
+				],
+				style	: {
+					"outline"	: {"fill": "#dedede", "stroke": "#333", "stroke-width": 2},
+					"center"	: {"fill": "#ae1e1e", "diameter": 8, "stroke": "#590303", "stroke-width": 1},
+					"needle"	: {"fill": "#000"},
+					"label"		: {"fill": "#000", "font-size": 14}
+				}
+			});
+			//---------------------------------------------------
+			// Create RH meter gauge
+			//---------------------------------------------------
+			var rh = $('#rh').SonicGauge({
+				label	: '\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008RH (%)',
+				start	: {angle: -225, num: 0},
+				end	: {angle: 45, num: 100},
+				digital	: {
+					"width"			: "16%",
+					"font-size"		: 19,
+					"color"			: '#333',
+					"text-align"		: "center",
+					"border-radius"		: 25,
+					"padding"		: 5,
+					"background-color"	: "#e6f0f8",
+					"margin-top"		: 80
+				},
+				digital_toFixed	: 1,
+				animation_speed	: 0,
+				markers	: [
+					{
+						gap: 10,
+						line: {"width": 20, "stroke": "none", "fill": "#eeeeee"},
+						text: {"space": 22, "text-anchor": "middle", "fill": "#333333", "font-size": 18}
+					},{
+						gap: 5, 
+						line: {"width": 12, "stroke": "none", "fill": "#aaaaaa"},
+						text: {"space": 18, "text-anchor": "middle", "fill": "#333333", "font-size": 14}
+					},{
+						gap: 1, 
+						line: {"width": 8, "stroke": "none", "fill": "#999999"}
+					}
+				],
+				needles : [{ style: { height: 2} } ],
+				sectors : [
+					{
+						start: 0,
+						end: 30,
+						style: {fill: "rgba(255,0,0,1.0)", stroke: "red", "stroke-width": 0}
+					},{
+						start: 30,
+						end: 40,
+						style: {fill: "rgba(255,0,0,.5)", stroke: "red", "stroke-width": 0}
+					},{
+						start: 40,
+						end: 80,
+						style: {fill: "rgba(0,255,0,.5)", stroke: "green", "stroke-width": 0}
+					},{
+						start: 80,
+						end: 100,
+						style: {fill: "rgba(255,0,0,.5)", stroke: "red", "stroke-width": 0}
+					}
+				],
+				style	: {
+					"outline"	: {"fill": "#dedede", "stroke": "#333", "stroke-width": 2},
+					"center"	: {"fill": "#ae1e1e", "diameter": 8, "stroke": "#590303", "stroke-width": 1},
+					"needle"	: {"fill": "#000"},
+					"label"		: {"fill": "#000", "font-size": 14}
+				}
+			});
+			//---------------------------------------------------
+			// Create RH meter gauge
+			//---------------------------------------------------
+			var co2 = $('#co2').SonicGauge({
+				label	: 'CO\u00B2 (PPM)\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008\u2008',
+				start	: {angle: -225, num: 0},
+				end	: {angle: 45, num: 100},
+				digital	: {
+					"width"			: "16%",
+					"font-size"		: 19,
+					"color"			: '#333',
+					"text-align"		: "center",
+					"border-radius"		: 25,
+					"padding"		: 5,
+					"background-color"	: "#e6f0f8",
+					"margin-top"		: 80
+				},
+				digital_toFixed	: 1,
+				animation_speed	: 0,
+				markers	: [
+					{
+						gap: 10,
+						line: {"width": 20, "stroke": "none", "fill": "#eeeeee"},
+						text: {"space": 22, "text-anchor": "middle", "fill": "#333333", "font-size": 18}
+					},{
+						gap: 5, 
+						line: {"width": 12, "stroke": "none", "fill": "#aaaaaa"},
+						text: {"space": 18, "text-anchor": "middle", "fill": "#333333", "font-size": 14}
+					},{
+						gap: 1, 
+						line: {"width": 8, "stroke": "none", "fill": "#999999"}
+					}
+				],
+				needles : [{ style: { height: 2} } ],
+				sectors : [
+					{
+						start: 0,
+						end: 10,
+						style: {fill: "rgba(255,0,0,1.0)", stroke: "red", "stroke-width": 0}
+					},{
+						start: 10,
+						end: 20,
+						style: {fill: "rgba(255,0,0,.5)", stroke: "red", "stroke-width": 0}
+					},{
+						start: 20,
+						end: 40,
+						style: {fill: "rgba(0,255,0,.5)", stroke: "green", "stroke-width": 0}
+					},{
+						start: 40,
+						end: 50,
+						style: {fill: "rgba(255,0,0,.5)", stroke: "red", "stroke-width": 0}
+					},{
+						start: 50,
+						end: 100,
+						style: {fill: "rgba(255,0,0,1.0)", stroke: "red", "stroke-width": 0}
+					}
+				],
+				style	: {
+					"outline"	: {"fill": "#dedede", "stroke": "#333", "stroke-width": 2},
+					"center"	: {"fill": "#ae1e1e", "diameter": 8, "stroke": "#590303", "stroke-width": 1},
+					"needle"	: {"fill": "#000"},
+					"label"		: {"fill": "#000", "font-size": 14}
+				}
+			});
+			//---------------------------------------------------
+			// Cycle gauge up and down (works with Thermometer
+			// and pH gauge, for example)
+			//---------------------------------------------------
+			function cycleGauge(el, delay, increment, mmin, mmax, current, target) {
+				if (typeof current == "undefined")	{ current = mmin; }
+				if (typeof target == "undefined")	{ target = mmax;  }
+				if (current < target)
+				{
+					current += increment;
+				}
+				else if (current > target)
+				{
+					current -= increment;
+				}
+				else
+				{
+					cycleGauge(el, delay, increment, mmin, mmax, current, (target == mmin) ? mmax : mmin);
+					return;
+				}
+				
+				el.SonicGauge('val', current);
+				setTimeout(function() {
+					cycleGauge(el, delay, increment, mmin, mmax, current, target);
+				}, delay);
+				
+			}
+			// Here is a lookup for the cycleGauge() call, for reference
+			//        (el,          delay,  increment, min,  max,  current,  target)
+			cycleGauge(Thermometer, 10000,  0.1,       70,   78,   72,       75);
+			cycleGauge(pH,          10000,  0.1,       6.8,  7.2,  7.1,      7.0);
+			cycleGauge(rh,          10000,  0.1,       50.0, 60.0, 58.0,     55.0);
+			cycleGauge(co2,         10000,  0.1,       30.0, 35.0, 36.0,     37.0);
+
+			//---------------------------------------------------
+			// Update clock every second
+			//---------------------------------------------------
+			function getTimestamp()
+			{
+				var d	= new Date();
+				return Math.round(d.getTime() / 1000) - (d.getTimezoneOffset() * 60);
+			}
+			setInterval(function() {
+				Clock.SonicGauge('val', getTimestamp());
+			}, 1000)
+			// Bind event whenever the clock value is updated
+			//Clock.on('update', function(e, data) {
+			//	console.log('clock is updated: ' + data);
+			//});
+			
+		});
+		</script>
+		
+		<style media="screen" type="text/css">
+			.gauge {
+				float: left;
+				margin: 30px 20px 50px 20px;
+			}
+                        body {
+				background-color: #ddddff;
+				font-family: 'Ubuntu';
+			}
+			.header {
+				margin: 10px 30px;
+				padding: 10px 30px;
+				font-size: 40pt;
+				font-family: 'Ubuntu';
+				background-color: #e8e8ff;
+				box-shadow: 10px 10px 5px #888888;
+			}
+			.chart {
+				float: right;
+				margin: 0px 30px;
+			}
+			.label {
+				padding: 5px 15px;
+				font-family: 'Ubuntu';
+				background-color: #e8e8ff;
+				box-shadow: 10px 10px 5px #888888;
+			}
+		</style>
+		
+	</head>
+	
+	<body>
+		<div class="header">ecosystem-pi <small>(acceptable ranges set for freshwater shrimp)</small></div>
+		<div id='rh' class="gauge"><div class="label">Relative Humidity is expected to be high in a closed system.<br/>&nbsp;</div></div>
+		<div id='pH' class="gauge"><div class="label">A drop in pH of 1.0 represents a ten-fold (30 PPM) of CO<sup>2</sup>. pH<6 = soft water, pH>8 = hard water.</div></div>
+		<div id='co2' class="gauge"><div class="label">Assume 3 PPM for atmospheric CO<sup>2</sup> as a starting point.<br/>CO<sup>2</sup> (PPM) = 3 * KH * 10<sup>(7 - pH)</sup></div></div>
+		<div id='clock' class="gauge" style="float: right;"></div>
+		<br clear="both" />
+		<div class="chart"><img src="/images/ph-kh_606x378.jpg" width="606" height="368"></div>
+		<div id='thermometer' class="gauge"></div>
+	</body>
+</html>
+

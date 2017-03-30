@@ -26,7 +26,7 @@ The next step then would be to use the Raspberry Pi 3 to monitor the changes in 
 ## Parts List
 Here's the quick-and-dirty parts list so far. I'll add prices when things get a little further on.
 
-1. Raspberry Pi 3 with 16GB micro-SD card and Raspian operating system and power adapter
+1. <s>Raspberry Pi 3</s> Raspberry Pi Zero W with 16GB micro-SD card, Raspian operating system and power adapter
 2. One 19-liter Corning Pyrex carboy
 3. One glass stopper which fits it
 4. One RhyzoMat subsurface root mat
@@ -40,6 +40,8 @@ Here's the quick-and-dirty parts list so far. I'll add prices when things get a 
 12. Two tiny female shrimp
 13. A 10g packet of shrimp food
 14. Optionally, one container of Ecological Laboratories Nite-Out II nitrifying bacteria
+15. Four NeoPixel quarters to form a 60-LED ring
+16. A CO<sup>2</sup> sensor with relative humidity and temperature built-in
 
 ### RhyzoMat
 You'll need to buy a square of RhyzoMat for the base. the plants will send their roots down and anchor into it.
@@ -125,4 +127,16 @@ Interestingly-enough, I've discovered a tiny snail that appears to have come fro
 I added about ten tiny pellets of [Hikari Tropical Shrimp Cuisine](http://www.hikari.info/tropical/t_29.html) shrimp feed.
 
 ### Optional Step
-I added a half-capful of [Ecological Laboratories Nite-Out II](https://www.microbelift.com/products/home-aquarium/bacterial-products/nite-out-ii/) which reduces nitrates and ammonia. This is probaly unnecessary, to be honest.
+I added a half-capful of [Ecological Laboratories Nite-Out II](https://www.microbelift.com/products/home-aquarium/bacterial-products/nite-out-ii/) which reduces nitrates and ammonia. This is probably unnecessary, to be honest.
+
+## Status - Three Days Later
+Everything's looking great. The two shrimp have nicely eaten the algae from the two *Aponogeton ulvaceous* cleaning them thoroughly.
+
+I've added a batch of tumbled gemstones to the bottom for a little color.  The roots have now taken hold enough so that I can remove the coathangers which held them down.
+
+I've ordered additional parts: a programmable NeoPixel light ring, a CO<sup>2</sup> sensor with relative humidity and temperature built-in and a Raspberry Pi Zero W in the hopes that all this will work on the cheaper platform.
+
+### Website Interface
+I've been working on the website interface. At the moment, everything is mocked up for the readings but a fair amount of research went into making sure that the shrimp would be in a comfortable setting.
+
+![ecosystem-pi](https://cloud.githubusercontent.com/assets/15971213/24483385/a40e702e-14ac-11e7-8b44-012858172cf0.png)
