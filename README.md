@@ -143,3 +143,24 @@ I've been working on the website interface. At the moment, everything is mocked 
 
 ## Raspberry Pi Zero W
 The new Raspberry Pi Zero W weighs in at less than a third of the price of the Raspberry Pi 3 originally planned for this project. I'll see if I can't get this smaller platform to do the same work as before.
+
+## Status - Week Two
+I took a water sample back to the aquarium-supply shop to be tested. The results look great so far. Here are those results:
+
+<table>
+	<tr><td><b>Test</b></td><td><b>Value</b></td><td><b>Description</b></td></tr>
+	<tr><td>pH</td><td>7.0</td><td>Perfect</td></tr>
+	<tr><td>Nitrites</td><td>0.0</td><td>Perfect</td></tr>
+	<tr><td>Ammonia</td><td>0.0</td><td>Perfect</td></tr>
+	<tr><td>KH</td><td>376 PPM (21 dGH * 17.9)</td><td>Water hardness (GH = Calcium and Magnesium ion concentration)</td></tr>
+</table>
+
+![watertest](https://cloud.githubusercontent.com/assets/15971213/24582453/0858600a-16e5-11e7-91eb-da98b3255faf.png)
+
+So the GH looks rather high at 376 PPM/21 dGH, to be honest. Granted, the following is a pH-KH chart but it seems to indicate that the CO<sup>2</sup> in the water then is 63 PPM if the pH is 7.0 and the KH is 21 (extrapolating a little).
+
+I would guess that 63 PPM of CO<sup>2</sup> is stressful to the shrimp which, in theory, like things in the 20-40 range. I should then attempt to soften the water to bring the KH level down to something more mid-range like *11*. At 7.0 pH this would put the CO<sup>2</sup> at 33 PPM within that 20-40 range.
+
+![ph-kh_606x378](https://cloud.githubusercontent.com/assets/15971213/24582525/7fd7d75e-16e6-11e7-9de2-99b48aea4d2b.jpg)
+
+The half-capful of Nite-Out II may have helped the nitrite & ammonia situation or perhaps it was unnecessary due to an original absence of any.
