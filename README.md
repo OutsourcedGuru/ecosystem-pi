@@ -164,3 +164,8 @@ I would guess that 63 PPM of CO<sup>2</sup> is stressful to the shrimp which, in
 ![ph-kh_606x378](https://cloud.githubusercontent.com/assets/15971213/24582525/7fd7d75e-16e6-11e7-9de2-99b48aea4d2b.jpg)
 
 The half-capful of Nite-Out II may have helped the nitrite & ammonia situation or perhaps it was unnecessary due to an original absence of any.
+
+|Donate||Cryptocurrency|
+|:-----:|---|:--------:|
+| ![eth-receive](https://user-images.githubusercontent.com/15971213/40564950-932d4d10-601f-11e8-90f0-459f8b32f01c.png) || ![btc-receive](https://user-images.githubusercontent.com/15971213/40564971-a2826002-601f-11e8-8d5e-eeb35ab53300.png) |
+|Ethereum||Bitcoin|
